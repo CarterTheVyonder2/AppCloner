@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppMorpher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
         header {
             background-color: #0073e6;
             color: #fff;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header img {
             width: 150px;
@@ -24,58 +27,89 @@
             margin: 0 auto;
         }
         header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
             margin: 10px 0;
         }
         main {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
             text-align: center;
         }
         main h2 {
-            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #0073e6;
         }
         .features {
             text-align: left;
-            margin: 0 auto;
-            max-width: 600px;
+            margin: 20px auto;
+            max-width: 800px;
         }
         .features li {
             margin: 10px 0;
         }
+        .features li:before {
+            content: "✔";
+            color: #28a745;
+            margin-right: 10px;
+        }
         .download-button {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px 30px;
             background-color: #28a745;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .download-button i {
+            margin-right: 10px;
         }
         .download-button:hover {
             background-color: #218838;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
         .example-section {
-            margin-top: 40px;
+            margin-top: 50px;
+            text-align: center;
         }
         .example-section img {
             max-width: 100%;
             height: auto;
             border: 1px solid #ccc;
             border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .example-section p {
             font-style: italic;
             color: #555;
-            margin-top: 10px;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -83,11 +117,12 @@
     <header>
         <img src="AppMorpher_logo.jpg" alt="AppMorpher Logo">
         <h1>AppMorpher</h1>
+        <p>Transform any app, for any platform, seamlessly.</p>
     </header>
     <main>
-        <h2>The Ultimate App Transformation Tool</h2>
-        <p>Upgrade, downgrade, and convert any app to any platform, bug-free.</p>
-        <h3>Features:</h3>
+        <h2>Revolutionize App Compatibility</h2>
+        <p>AppMorpher allows you to upgrade, downgrade, or convert apps across platforms with zero bugs. Experience limitless possibilities!</p>
+        <h3>Key Features:</h3>
         <ul class="features">
             <li>Cross-Platform Conversion</li>
             <li>Upgrade/Downgrade Flexibility</li>
@@ -100,15 +135,14 @@
             <li>Offline Conversion</li>
             <li>App Store Integration</li>
         </ul>
-        <a href="#" class="download-button">Download Now</a>
-
+        <a href="#" class="download-button"><i class="fas fa-download"></i>Download Now</a>
         <div class="example-section">
             <img src="example_pota_toss.jpg" alt="Pota Toss on Android">
             <p>Example of Pota Toss (a now deleted iOS app) on Android!</p>
         </div>
     </main>
     <footer>
-        &copy; 2024 AppMorpher. All rights reserved.
+        &copy; 2024 AppMorpher. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
     </footer>
 </body>
 </html>
